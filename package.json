@@ -1,0 +1,25 @@
+{
+  "name": "BrowserStack_Testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-script.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "selenium-webdriver": "^4.0.0-rc-1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasperChen97/BrowserStack_Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasperChen97/BrowserStack_Testing/issues"
+  },
+  "homepage": "https://github.com/JasperChen97/BrowserStack_Testing#readme"
+}
