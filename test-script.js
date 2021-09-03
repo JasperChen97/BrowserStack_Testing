@@ -32,30 +32,85 @@ async function runTestWithCaps (capabilities) {
   }
   await driver.quit();
 }
+
+
 const capabilities1 = {
-  'browser': 'chrome',
-  'browser_version': '92.0',
-  'os': 'Windows',
-  'os_version': '10',
-  'build': 'browserstack-build-1',
-  'name': 'Parallel test 1'
+  'bstack:options' : {
+    "os" : "Windows",
+    "osVersion" : "10"
+  },
+  "browserName" : "Chrome",
+  "browserVersion" : "latest",
+  'project': 'Marketing Website v2',
+  'build': 'build-1',
+  "name": "testing name: Should have 3 buttons",
+  'browserstack.debug': 'true',
+  'browserstack.console': 'info',
+  'browserstack.networkLogs': 'true'
 }
+
 const capabilities2 = {
-	'browser': 'chrome',
-  'browser_version': '92.0',
-  'os': 'OS X',
-  'os_version': 'Big Sur',
-  'build': 'browserstack-build-1',
-  'name': 'Parallel test 2'
+  'bstack:options' : {
+    'os': 'iPhone XS',
+    "osVersion" : "14"
+  },
+  "browserName" : "iPhone",
+  'real_mobile': 'true',
+  'project': 'Marketing Website v2',
+  'build': 'build-1',
+  "name": "testing name: Should have 3 buttons",
+  'browserstack.debug': 'true',
+  'browserstack.console': 'info',
+  'browserstack.networkLogs': 'true'
 }
+
 const capabilities3 = {
-	'browser': 'safari',
-  'browser_version': 'latest',
-  'os': 'OS X',
-  'os_version': 'Big Sur',
-  'build': 'browserstack-build-1',
-  'name': 'Parallel test 3'
+  'bstack:options' : {
+    "os" : "OS X",
+    "osVersion" : "Big Sur"
+  },
+  "browserName" : "Chrome",
+  "browserVersion" : "latest",
+  'project': 'Marketing Website v2',
+  'build': 'build-1',
+  "name": "testing name: Should have 3 buttons",
+  'browserstack.debug': 'true',
+  'browserstack.console': 'info',
+  'browserstack.networkLogs': 'true'
 }
+
+const capabilities4 = {
+  'bstack:options' : {
+    "os" : "Google Pixel 5",
+    "osVersion" : "11.0"
+  },
+  "browserName" : "Android",
+  'real_mobile': 'true',
+  'project': 'Marketing Website v2',
+  'build': 'build-1',
+  "name": "testing name: Should have 3 buttons",
+  'browserstack.debug': 'true',
+  'browserstack.console': 'info',
+  'browserstack.networkLogs': 'true'
+}
+
+const capabilities5 = {
+  'bstack:options' : {
+    "os" : "Windows",
+    "osVersion" : "10"
+  },
+  "browserName" : "Firefox",
+  "browserVersion" : "latest",
+  'project': 'Marketing Website v2',
+  'build': 'build-1',
+  "name": "testing name: Should have 3 buttons",
+  'browserstack.debug': 'true', 
+  'browserstack.console': 'info',
+  'browserstack.networkLogs': 'true'
+}
+
 runTestWithCaps(capabilities1);
 runTestWithCaps(capabilities2);
 runTestWithCaps(capabilities3);
+runTestWithCaps(capabilities4);
+runTestWithCaps(capabilities5);
